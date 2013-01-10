@@ -8,19 +8,21 @@
 </head>
 <body>
 	<header>
-		<h1>Elizabeth's DHWI Applications</h1>
+		<h1><center>Elizabeth's DHWI Applications</center></h1>
 		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/topics/new">Create Topic</a></li>
-				<li><a href="/about.html">About</a></li>
-			</ul>
+		  <ul>
+		    <li><%= link_to 'Home', root_path %></li>
+		    <li><%= link_to 'Create a Topic', new_topic_path %></li>
+		    <li><%= link_to 'About', pages_about_path %></li>
+		  </ul>
 		</nav>
 	</header>
 <% flash.each do |name, msg| %>
 <div><%= msg %></div>
 <% end %>
 <%= yield %>
-<p>Image: All Rights Reserved.</p>
+<footer>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />Image is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.
 </body>
 </html>
