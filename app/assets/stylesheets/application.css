@@ -12,12 +12,13 @@
  *= require_tree .
  */
 html {background-color:#eee;
-
 }
 body{
+	
+	font-family: georgia, sans-serif;
 	width: 70%;
 	margin: 0 auto; /*automatically calculates the margin according to screensize*/
-	background-color: #F5FFFA;
+	background-color: #F5F5F5;
 	padding: 20px 40px;
 	border: 1px solid #ddd;
 
@@ -26,8 +27,11 @@ header{
 	background-color: #333;
 	color: #fff;
 	padding: 20px;
+	border-left: 5px solid #777;
 }
-
+header h1{
+	font-size: 40px;
+}
 nav ul{
 	list-style:none;
 	margin-left:0;
@@ -43,3 +47,21 @@ header a:visited {color: #fff};
 header a:hover {color: #fff;}
 header a:focus {color: #fff;}
 header a:active {color: #fff;}
+
+table{
+	width: 100%;	
+}
+thead th { /*columns*/
+	border-bottom: 2px solid #ccc;
+	text-align:left;
+}
+th,
+td {
+	padding: 5px 0; 
+}
+tbody tr {  /*select table rows that are table body*/
+	background-color: #eee;
+}
+tbody tr:nth-child(even) { /*creates zebra stripes in table*/
+	background-color: #aaa;
+}
