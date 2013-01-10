@@ -12,22 +12,30 @@
  *= require_tree .
  */
 html {background-color:#eee;
+	background-image: url(Leaf_Image.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 body{
 	
 	font-family: georgia, sans-serif;
 	width: 70%;
 	margin: 0 auto; /*automatically calculates the margin according to screensize*/
-	background-color: #F5F5F5;
+	background-color: aliceblue;
 	padding: 20px 40px;
 	border: 1px solid #ddd;
+	color: indigo;
 
 }
 header{
 	background-color: #333;
-	color: #fff;
+	color: lavender;
 	padding: 20px;
-	border-left: 5px solid #777;
+	/*border-left: 5px solid lavender;*/
+	background-image: url(Leaf_Image.jpg); /*instead of having in the header, put it on the body or html tag */
+	background-repeat:no-repeat;
+	background-size: cover;
+
 }
 header h1{
 	font-size: 40px;
@@ -36,17 +44,20 @@ nav ul{
 	list-style:none;
 	margin-left:0;
 	padding-left:0;
+	
 }
 
 nav li{
 	display:inline;
+	padding-right:5px;
+
 }
 
-header a:link {color: #fff;}
-header a:visited {color: #fff};
-header a:hover {color: #fff;}
-header a:focus {color: #fff;}
-header a:active {color: #fff;}
+header a:link {color: lavender;}
+header a:visited {color: lavender};
+header a:hover {color: lavender;}
+header a:focus {color: lavender;}
+header a:active {color: lavender;}
 
 table{
 	width: 100%;	
@@ -60,8 +71,10 @@ td {
 	padding: 5px 0; 
 }
 tbody tr {  /*select table rows that are table body*/
-	background-color: #eee;
+	background-color: whitesmoke;
 }
 tbody tr:nth-child(even) { /*creates zebra stripes in table*/
-	background-color: #aaa;
+	background-color: lavender;
 }
+/*to change the link colors for lower order hyperlinks, 
+such as Hello, Goodbye, put in a:link {color#} and etc.;*/
